@@ -4,9 +4,9 @@ Thanks to [Jekyll]:(http://github.com/mojombo/jekyll). I started from https://gi
 
 # License
 
-The following directories and their contents are Copyright Sean Hess. You may not reuse anything therein without my permission:
+The following directories and their contents are Copyright John Lindquist. You may not reuse anything therein without my permission:
 
 * _posts/
 * images/
 
-All other directories and files are MIT Licensed. 
+All other directories and files are MIT Licensed.
