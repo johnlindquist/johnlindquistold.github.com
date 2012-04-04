@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Angular Tutorial
+title: AngularJS Tutorial
 ---
 
 {{ page.title }}
