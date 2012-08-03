@@ -59,6 +59,12 @@ sup a {
 	text-decoration: none;
 }
 
+header {
+    text-align: right;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
 footer {
     font-size: 14px;
     background-color: #334;
