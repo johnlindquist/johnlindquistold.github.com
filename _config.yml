@@ -1,2 +1,6 @@
 markdown: rdiscount
 pygments: true
+name: johnlindquist.com
+description: Tutorials and examples from John Lindquist
+url: http://johnlindquist.com
+auto: true
