@@ -10,3 +10,5 @@ The following directories and their contents are Copyright John Lindquist. You m
 * images/
 
 All other directories and files are MIT Licensed.
+
+Demos are submodules linked to other projects.
