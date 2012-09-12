@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="angular-resolve" pattern="file:demos/angular-resolve//*" />
+</component>

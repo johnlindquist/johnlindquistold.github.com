@@ -1,3 +1,6 @@
 [submodule "demos/angular-routing"]
 	path = demos/angular-routing
 	url = git://github.com/johnlindquist/angular-routing.git
+[submodule "demos/angular-resolve"]
+	path = demos/angular-resolve
+	url = git://github.com/johnlindquist/angular-resolve.git
