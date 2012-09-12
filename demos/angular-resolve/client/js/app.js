@@ -78,7 +78,7 @@ function AppCtrl($scope, $rootScope, $location) {
 
     $scope.tabs = [
         {
-            title:"Home",
+            title:"Home - No Resolve",
             url  :"#/"
         },
         {
