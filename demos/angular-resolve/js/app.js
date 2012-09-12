@@ -56,15 +56,18 @@ function AppCtrl($scope, $rootScope, $location) {
     $rootScope.$on("$routeChangeStart", function (event, next, current) {
         $scope.alertType = "alert-info";
         $scope.alertMessage = "Changing routes";
+        $scope.active = "progress-striped active";
     });
     $rootScope.$on("$routeChangeSuccess", function (event, current, previous) {
         $scope.alertType = "alert-success";
         $scope.alertMessage = "Successfully changed routes :)";
+        $scope.active = "";
     });
     $rootScope.$on("$routeChangeError", function (event, current, previous, rejection) {
         alert(rejection);
         $scope.alertType = "alert-error";
         $scope.alertMessage = "Failed to change routes :(";
+        $scope.active = "";
     });
 
     $scope.alertType = "alert-info";

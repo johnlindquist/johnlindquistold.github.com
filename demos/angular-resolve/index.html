@@ -7,10 +7,13 @@
     </head>
 <body>
 
-<div ng-app="app" ng-controller="AppCtrl">
+<div ng-app="app" ng-controller="AppCtrl" class="well well-large" style="width: 350px;">
     <div class="alert" ng-class="alertType">
         <button type="button" class="close" data-dismiss="alert">x</button>
         {{alertMessage}}
+    </div>
+    <div class="progress" ng-class="active">
+        <div class="bar" style="width: 100%;"></div>
     </div>
     <ul class="nav nav-tabs">
         <li ng-repeat="tab in tabs" ng-class="checkActive(tab.url)">
