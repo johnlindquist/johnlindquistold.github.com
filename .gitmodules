@@ -1,0 +1,3 @@
+[submodule "demos/angular-routing"]
+	path = demos/angular-routing
+	url = git://github.com/johnlindquist/angular-routing.git
