@@ -7,14 +7,14 @@
     </head>
 <body>
 
-<div ng-app="app" ng-controller="AppCtrl" class="well well-large" style="width: 320px;" ng-cloak>
-    <div class="alert" ng-class="alertType">
+<div ng-app="app" ng-controller="AppCtrl" class="well well-large" style="width: 320px;">
+    <div class="alert" ng-class="alertType" ng-cloak>
         {{alertMessage}}
     </div>
-    <div class="progress" ng-class="active">
+    <div class="progress" ng-class="active" ng-cloak>
         <div class="bar" style="width: 100%;"></div>
     </div>
-    <ul class="nav nav-tabs">
+    <ul class="nav nav-tabs" ng-cloak>
         <li ng-repeat="tab in tabs" ng-class="checkActive(tab.url)">
             <a href="{{tab.url}}">{{tab.title}}</a>
         </li>
