@@ -1,8 +1,6 @@
 var app = angular.module('app', []);
 
 app.config(function ($locationProvider, $routeProvider) {
-    $locationProvider.html5Mode(true);
-
     $routeProvider.when("/", {templateUrl:"partials/home.html"});
     $routeProvider.when("/cat", {
         templateUrl:"partials/cat.html",
@@ -25,7 +23,7 @@ app.config(function ($locationProvider, $routeProvider) {
     });
     $routeProvider.when("/dog", {
         templateUrl:"partials/dog.html",
-        controller:"DogCtrl",
+        controller :"DogCtrl",
         resolve    :{
             toy:function ($timeout, $q) {
                 var defer = $q.defer();
@@ -64,11 +62,9 @@ function AppCtrl($scope, $rootScope, $location) {
         $scope.alertMessage = "Successfully changed routes :)";
     });
     $rootScope.$on("$routeChangeError", function (event, current, previous, rejection) {
-        alert(rejection + " - Sending you back home");
+        alert(rejection);
         $scope.alertType = "alert-error";
         $scope.alertMessage = "Failed to change routes :(";
-
-        $location.path("/");
     });
 
     $scope.alertType = "alert-info";
@@ -77,20 +73,20 @@ function AppCtrl($scope, $rootScope, $location) {
     $scope.tabs = [
         {
             title:"Home",
-            url  :"/"
+            url  :"#/"
         },
         {
             title:"Cats Succeed",
-            url  :"/cat"
+            url  :"#/cat"
         },
         {
             title:"Dogs Fail",
-            url  :"/dog"
+            url  :"#/dog"
         }
     ];
 
     $scope.checkActive = function (url) {
-        if (url == $location.path()) {
+        if (url == "#" + $location.path()) {
             return "active";
         } else {
             return "";
