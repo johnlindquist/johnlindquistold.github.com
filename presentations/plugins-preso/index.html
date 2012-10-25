@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Writing Plugins for Intellij</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <!--<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet'-->
+    <!--type='text/css'>-->
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/webstorm.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write('<link rel="stylesheet" href="css/print/' + ( window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">');
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+
+        <section>
+            <h2>Writing Plugins for Intellij</h2>
+            <p class="placeholder"></p>
+
+            <p> Mihai Toader</p>
+
+            <p>@mtoader</p>
+
+            <p>+</p>
+
+            <p>John Lindquist</p>
+
+            <p>@johnlindquist</p>
+
+            <p class="placeholder"></p>
+
+            <img src="css/theme/jetbrains-logo.png"
+                 style="border: none; background: none; margin: 0; box-shadow: none; width: 250px;"/>
+            <hr>
+            <p style="font-size: 70%; color: red;">*This webinar is being recorded*</p>
+        </section>
+
+        <section>
+            <h2>Poll Results</h2>
+            <ul>
+                <li>33 have written a plugin</li>
+                <li>Getting started is hard</li>
+                <li>Documentation is sparse</li>
+                <li>No info on building UI</li>
+            </ul>
+        </section>
+        <section>
+            <h2>What do you want to build?</h2>
+            <ul>
+                <li>52% - Tooling</li>
+                <li>22% - Language</li>
+                <li>17% - Framework</li>
+                <li>8% - Other</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>What is this about?</h2>
+            <ul>
+                <li>A non-JetBrains point of view</li>
+                <li>Understand your questions/concerns</li>
+                <li>De-mystify the process</li>
+                <li>Distribute resources</li>
+            </ul>
+
+        </section>
+        <section>
+            <h2>The Basics</h2>
+            <ul>
+                <li>Intellij is a platform</li>
+                <li>Intellij (community) is open-source</li>
+                <li>Everything is a plugin (JavaScript, etc)</li>
+                <li>Mostly anything is possible</li>
+            </ul>
+
+        </section>
+
+        <section>
+            <h2>Ridiculous ideas</h2>
+            <ul>
+                <li>Send a tweet every time a test passes</li>
+                <li>Flip the editor upside-down on Wednesdays</li>
+                <li>Random project-wide "Todo" generator</li>
+                <li>Auto-move all files to a dir named "stuff"</li>
+            </ul>
+
+        </section>
+
+        <section>
+            <h2>Good ideas</h2>
+            <ul>
+                <li>Support a new language</li>
+                <li>Support a framework</li>
+                <li>Enhance the editor (e.g., VIM plugin)</li>
+                <li>New refactorings, inspections, generators</li>
+            </ul>
+
+        </section>
+
+        <section>
+            <h2>Current best docs</h2>
+            <span><a href="http://j.mp/jetbrains-plugin-dev">http://j.mp/jetbrains-plugin-dev</a></span>
+        </section>
+
+        <section>
+            <h2>Q&A with Mihai</h2>
+            <p>Please ask questions, we'll do our best to answer</p>
+            <p>Any unanswered questions will be addressed in a follow-up blog post</p>
+        </section>
+
+        <section>
+            Why did you choose the Intellij platform to build your plugin?
+        </section>
+        <section>
+            How did you get started developing your plugin?
+        </section>
+        <section>
+            What were the main challenges you faced when getting started?
+        </section>
+        <section>
+            What did you like about the plugin development process?
+        </section>
+        <section>
+            What would you change about the process?
+        </section>
+        <section>
+            Have you received much user feedback for your plugin?
+        </section>
+        <section>
+            Why did you choose to open-source your plugin? Has anyone else contributed?
+        </section>
+
+        <section>
+            <h2>Thanks for watching!</h2>
+
+            <p>For future announcements, follow:</p>
+            <p class="placeholder"></p>
+            <p>http://blogs.jetbrains.com/idea</p>
+
+            <p>+</p>
+
+            <p>@jetbrains</p>
+
+            <p class="placeholder"></p>
+            <p class="placeholder"></p>
+            <img src="css/theme/jetbrains-logo.png"
+                 style="border: none; background: none; margin: 0; box-shadow: none; width: 250px;"/>
+        </section>
+    </div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+
+<script>
+
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls:true,
+        progress:true,
+        history:true,
+
+        theme:Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition:Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies:[
+            { src:'lib/js/highlight.js', async:true, callback:function () {
+                window.hljs.initHighlightingOnLoad();
+            } },
+            { src:'lib/js/classList.js', condition:function () {
+                return !document.body.classList;
+            } },
+            { src:'lib/js/showdown.js', condition:function () {
+                return !!document.querySelector('[data-markdown]');
+            } },
+            { src:'lib/js/data-markdown.js', condition:function () {
+                return !!document.querySelector('[data-markdown]');
+            } },
+            { src:'plugin/zoom-js/zoom.js', condition:function () {
+                return !!document.body.classList;
+            } },
+            { src:'/socket.io/socket.io.js', async:true, condition:function () {
+                return window.location.host === 'localhost:1947';
+            } },
+            { src:'plugin/speakernotes/client.js', async:true, condition:function () {
+                return window.location.host === 'localhost:1947';
+            } }
+        ]
+    });
+</script>
+
+</body>
+</html>
