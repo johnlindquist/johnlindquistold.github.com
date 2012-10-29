@@ -13,7 +13,7 @@
 <body>
 <div class="reveal" ng-controller="CardsCtrl">
     <div class="slides">
-        <section class="jtextfill" ng-repeat="card in cards.data.feed.entry"><span>{{card.title.$t}}</span></section>
+        <section class="jtextfill" ng-repeat="card in cards"><span>{{card.title.$t}}</span></section>
     </div>
 </div>
 
@@ -26,5 +26,6 @@
 <script src="js/directives.js"></script>
 <script type="text/javascript" src="lib/reveal/lib/js/head.min.js"></script>
 <script type="text/javascript" src="lib/reveal/js/reveal.js"></script>
+<script type="text/javascript" src="https://raw.github.com/bestiejs/lodash/v0.9.0/lodash.min.js"></script>
 </body>
 </html>
