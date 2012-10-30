@@ -17,9 +17,6 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
 
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- Required stylesheet -->
-    <link rel="stylesheet" href="components/deck.js/core/deck.core.css">
 
     <!-- Extension CSS files go here. Remove or add as needed. -->
     <link rel="stylesheet" href="components/deck.js/extensions/goto/deck.goto.css">
@@ -29,11 +26,12 @@
     <link rel="stylesheet" href="components/deck.js/extensions/hash/deck.hash.css">
     <link rel="stylesheet" href="components/deck.js/extensions/scale/deck.scale.css">
 
-    <!-- Style theme. More available in /themes/style/ or create your own. -->
-    <link rel="stylesheet" href="components/deck.js/themes/style/web-2.0.css">
 
     <!-- Transition theme. More available in /themes/transition/ or create your own. -->
-    <link rel="stylesheet" href="components/deck.js/themes/transition/horizontal-slide.css">
+    <link rel="stylesheet" href="components/deck.js/themes/transition/fade.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+
 
     <!-- Required Modernizr file -->
     <script src="components/deck.js/modernizr.custom.js"></script>
@@ -43,15 +41,36 @@
 <!-- Begin slides. Just make elements with a class of slide. -->
 
 <section class="slide">
-    <h1>Slide</h1>
+    <h2>Yeoman</h2>
+    <img src="images/yeoman-003.png" alt="Yeoman">
+</section>
+
+<section class="slide slide-background">
+    <h2>What is Yeoman?</h2>
+    <ul>
+        <li class="slide">Robust bootstrap</li>
+        <li class="slide">Code generation</li>
+        <li class="slide">Server with watching and compiling</li>
+        <li class="slide">Optimal build</li>
+    </ul>
 </section>
 
 <section class="slide">
-    <h1>Content</h1>
-</section>
 
-<section class="slide">
-    <h1>Here</h1>
+    <h2>Before you get started</h2>
+    <ul>
+        <li class="slide">*Lots* of of dependencies!!!</li>
+        <li class="slide"><strong>platform tools: </strong>node, ruby, python, git</li>
+        <li class="slide"><strong>third-party tools:</strong>phantomjs, compass, ligjpeg-trubo, OptiPNG</li>
+        <li class="slide"><strong>node packages:</strong> bower, coffee-script, grunt, requirejs, and many others</li>
+
+    </ul>
+    <h2>How to install</h2>
+    <ul>
+        <li class="slide">Go to <a href="http://yeoman.io/installation.html">yeoman.io</a></li>
+        <li class="slide">Read directions :)</li>
+        <li class="slide">(If on Windows, use chocolatey: <a href="http://chocolatey.org">chocolatey.org</a>), then "cinst yeoman"</li>
+    </ul>
 </section>
 
 <!-- End slides. -->
