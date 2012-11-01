@@ -6,7 +6,7 @@ http://requirejs.org/docs/errors.html#scripterror
   http://localhost:3501/scripts/vendor/9903151d.require.js:1713
 CACHE MANIFEST
 
-# Time: Tue Oct 30 2012 16:57:32 GMT-0600 (Mountain Daylight Time)
+# Time: Thu Nov 01 2012 02:04:55 GMT-0600 (Mountain Daylight Time)
 # This manifest was created by confess.js, http://github.com/jamesgpearce/confess
 #
 # Retrieved URL: http://localhost:3501/
@@ -45,12 +45,12 @@ components/deck.js/themes/transition/fade.css
 http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js
 http://localhost:3501/app/images/glyphicons-halflings-white.png?1351632823
 http://localhost:3501/app/images/glyphicons-halflings.png?1351632823
-http://localhost:3501/images/yeoman-logo.png
+http://localhost:3501/images-no-compression/yeoman-logo.png
 http://www.google-analytics.com/ga.js
 images/886b346b.yeoman-003.png
 scripts/main.js
 scripts/vendor/9903151d.require.js
-styles/75f07244.main.css
+styles/98a903f6.main.css
 
 NETWORK:
 *
