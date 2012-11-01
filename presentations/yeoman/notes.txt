@@ -1,0 +1,2 @@
+main.js not being included
+background-image not being renamed to match compressed image
