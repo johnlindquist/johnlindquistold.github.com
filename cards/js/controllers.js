@@ -4,7 +4,7 @@
 
 
 function CardsCtrl($scope, $http) {
-    $http.get("https://spreadsheets.google.com/feeds/list/0ApDPbpSNCArIdDctTnl4RWExUGlwdnY4ZlJUZUl1YUE/1/public/basic?alt=json")
+    $http.jsonp("https://spreadsheets.google.com/feeds/list/0ApDPbpSNCArIdDctTnl4RWExUGlwdnY4ZlJUZUl1YUE/1/public/basic?alt=json")
         .success(function (data) {
             var cards = _.shuffle(data.feed.entry);
 
